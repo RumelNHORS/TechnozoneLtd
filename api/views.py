@@ -10,3 +10,10 @@ class ServiceListView(generics.ListAPIView):
     queryset = api_models.Service.objects.all()
     serializer_class = api_serializers.ServiceSerializer
 
+
+class ProjectListView(generics.ListAPIView):
+    queryset = api_models.Project.objects.all()
+    serializer_class = api_serializers.ServiceSerializer
+    serializer_class = api_serializers.ProjectSerializer
+
+

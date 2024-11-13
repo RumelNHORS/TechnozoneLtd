@@ -8,3 +8,12 @@ class Service(models.Model):
 
     def __str__(self):
         return self.title
+
+class Project(models.Model):
+    title = models.CharField(max_length=100, verbose_name="Project Title")
+    short_description = models.TextField(verbose_name="Short Description")
+    image = models.ImageField(upload_to='projects/', blank=True, null=True, verbose_name="Project Image")
+
+    def __str__(self):
+        return self.title
+

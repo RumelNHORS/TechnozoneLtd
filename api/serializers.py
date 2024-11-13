@@ -6,3 +6,9 @@ class ServiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = api_models.Service
         fields = ['id', 'title', 'short_description', 'image']
+
+class ProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = api_models.Project
+        fields = ['id', 'title', 'short_description', 'image']
+
