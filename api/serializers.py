@@ -12,3 +12,8 @@ class ProjectSerializer(serializers.ModelSerializer):
         model = api_models.Project
         fields = ['id', 'title', 'short_description', 'image']
 
+class AboutUsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = api_models.AboutUs
+        fields = ['id', 'title', 'description', 'image']
+

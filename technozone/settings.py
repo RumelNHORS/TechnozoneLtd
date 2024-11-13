@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'api',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -141,4 +142,16 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+        'height': 300,
+        'width': 800,
+        'toolbarCanCollapse': True,
+    },
+}
+
 
